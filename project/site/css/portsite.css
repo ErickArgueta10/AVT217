@@ -1,4 +1,6 @@
-@charset "UTF-8";
+.clearboth {
+	clear: both;
+}@charset "UTF-8";
 /* CSS Document */
 
 /*---- Site Colors 
@@ -41,6 +43,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	max-width: 1400px;
 }
 ol, ul {
 	list-style: none;
@@ -62,12 +65,17 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+header {
+	width:100%;
+	background-color: #ebebeb;
+		overflow: hidden;
+}
 nav {
 	width: 1440px;
 	height: 94px;
 	background-color: #ebebeb;
 	overflow: hidden;
-	margin-bottom: 100px;
+	margin-bottom: 0 auto 15px;
 	
 }
 
@@ -101,6 +109,11 @@ nav li {
 	float: right;
 }
 
+.nav a.active {
+	background-color: #2f5789;
+	color: white;
+	padding: 5px;
+}
  nav a:link {
 	text-decoration: none;
 	color: #2f5789;
@@ -108,7 +121,8 @@ nav li {
 }
 
 nav a:visited {
-	
+	text-decoration: none;
+	color: #2f5789;
 }
 
 nav a:hover {
@@ -118,10 +132,12 @@ nav a:hover {
 	padding: 5px;
 }
 
+
 .wrapper {
 	width: 1135px;
 	height: 830px;
 	margin: 0 auto;
+	
 }
 
 h1 {
@@ -129,7 +145,8 @@ h1 {
 	font-size: 45px;
 	color: #2f5789;
 	margin-top: 64px;
-	margin-bottom: 76px;
+	margin-bottom: 43px;
+	margin-left: 10px;
 }
 
 .column {
@@ -169,17 +186,25 @@ h5 {
 	background-color: #2f5789;
 	color: #ffffff;
 	padding: 8px;
-	margin-left: 149px;
+	margin-bottom: 150px;
 	font-weight: 700;
 	font-size: 16px;
 	text-decoration: none;
+}
+
+ #container2 { /* new */
+	width:100%;
+	 background-color: #ebebeb;
+	 overflow: hidden;
+	 clear: both;
+	 margin-top: 80px; /* you may change the size here*/
 }
 
 footer {
 	width: 1440px;
 	height: 94px;
 	background-color: #ebebeb;
-	margin-top: 150px;
+	margin: 0 auto;
 	
 	
 }
@@ -190,7 +215,7 @@ footer {
 	font-weight: 500;
 	font-size: 14px;
 	margin-top: 40px;
-	margin-left: 150px;
+	margin-left: 100px;
 }
 
 .social {
@@ -206,8 +231,125 @@ footer {
 	margin-right: 34px;
 	border: 2px solid #ffffff;
 	border-radius: 100px;
-	
+}
 
+p {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: normal;
+	max-width: 1120px;
+	margin-bottom: 62px;
+	margin-left: 10px; /* you may change the size here*/
+}
+
+.clearboth {
+	clear: both;
+}
+
+
+
+/*Contact Styles*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:#2f5789;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #ebebeb;
+  padding: 20px;
+}
+
+
+/*Homepage Styles*/
+
+.info {
+	float: left;
+	width: 600px;
+}
+p {
+	line-height: 1.5;
+}
+.photo {
+	float: right;
+	width: 460px;
+	height: 776px;
+}
+
+
+/*Portfolio Styles*/
+
+.portfolio {
+	float: right;
+}
+
+.portfolio a:hover {
+	background-color:rgba(47,87,137,0.70)
+}
+
+.portfolio1 {
+	float: right;
+}
+
+.portfolio2 {
+	float: right;
+}
+
+.portfolio3 {
+	float: right;
+}
+
+.portfolio4 {
+	float: right;
+}
+
+.portcontainer img {
+	padding:10px;
+}
+
+
+.directional {
+	margin-top: 54px;
+	margin-left: 114px;
+	margin-bottom: 90px;
 	
 }
 
+.directional a {
+	background-color: #2f5789;
+	color: #ffffff;
+	padding: 8px;
+	margin-bottom: 150px;
+	font-weight: 700;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.directional a:hover {
+	background-color:rgba(47,87,137,0.70) 
+	
+}
